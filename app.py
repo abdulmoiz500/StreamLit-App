@@ -108,7 +108,7 @@ def main():
         st.markdown(f"**You:** {last_user_input}")
         st.markdown(f"**AI:** {last_bot_reply}")
 
-    user_question = st.chat_input("Ask a question...")
+    user_question = st.text_input("Ask a question...")
 
     if user_question:
         print("User input detected, calling handle_userinput()")  # Debugging log
